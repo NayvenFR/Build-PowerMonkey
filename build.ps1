@@ -4,9 +4,6 @@ Set-Location edk2
 # Activate virtual environment
 . .venv\Scripts\Activate.ps1
 
-# Install Python dependencies
-pip install -r pip-requirements.txt --upgrade
-
 # Setup and update workspace
 stuart_setup -c .pytool/CISettings.py
 stuart_update -c .pytool/CISettings.py -a X64 TOOL_CHAIN_TAG=VS2022
